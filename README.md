@@ -320,7 +320,9 @@
 
    <br>
     <!-- MIDDLE HEADING -->
-    <div class="welcome">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp WELCOME TO THE HOME</div>
+        <div class="welcome">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp WELCOME TO THE HOME</div>
+        
+        
     <!-- Left side -->
     <div class="lfloat">
     <!-- <h3 id="h3headings">Welcome to the home!</h3> -->
@@ -429,7 +431,7 @@
             </li>
             <li>
                 <a href="https://www.facebook.com/arvindkurmi08/">
-                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="facebook.png" alt="Twitter logo">
+                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="[facebook.png](https://images.unsplash.com/photo-1654277041218-84424c78f0ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80)" alt="Twitter logo">
                     
                 </a>
             </li>
