@@ -425,7 +425,7 @@
         <ul style="margin-top: 300px;">
             <li>
                 <a href="https://web.telegram.org/k/#Arvind_kurmi">
-                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="telegram.png" alt="GitHub logo">
+                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="[telegram.png](https://images.unsplash.com/photo-1657647269831-23835623fe02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60)" alt="GitHub logo">
 
                 </a>
             </li>
