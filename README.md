@@ -437,7 +437,7 @@
             </li>
             <li>
                 <a href="https://www.youtube.com/channel/UCKbSq_MokkAlIx6s-FR3pFw">
-                    <img style="height: 100px; width: 100px; border-radius: 50%;" src="youtube.png" alt="LinkedIn logo">
+                    <img style="height: 100px; width: 100px; border-radius: 50%;" src="![LinkedIn](./youtube.png)" alt="LinkedIn logo">
 
                 </a>
             </li>
