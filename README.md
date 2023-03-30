@@ -159,139 +159,139 @@
         }
 
         .testimonial{
-    /* margin: 10px auto 10px; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 20px;
-}
+             /* margin: 10px auto 10px; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 20px;
+        }
 
-.testimonial .card{
-    position:relative;
-    margin:0 auto;
-    width: 350px;
-    border-radius: 20%;
-    /* background: rgb(97, 94, 94); */
-    padding:20px;
-    box-sizing: border-box;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(58,58,58,0.5);
-    overflow: hidden;
-}
+        .testimonial .card{
+            position:relative;
+            margin:0 auto;
+            width: 350px;
+            border-radius: 20%;
+            /* background: rgb(97, 94, 94); */
+            padding:20px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(58,58,58,0.5);
+            overflow: hidden;
+        }
 
-.testimonial .card .layer{
-    position:absolute;
-    top:calc(100% - 2px);
-    left:0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(#a7a7a7, #47585e  ,#4e4f4f);
-    z-index: 1;
-    transition: 1.5s;
-}
+        .testimonial .card .layer{
+            position:absolute;
+            top:calc(100% - 2px);
+            left:0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(#a7a7a7, #47585e  ,#4e4f4f);
+            z-index: 1;
+            transition: 1.5s;
+        }
 
-.testimonial .card:hover .layer{
-    top:0;
-}
+        .testimonial .card:hover .layer{
+            top:0;
+        }
 
-.testimonial .card .content{
-    position: relative;
-    z-index: 2;
-    font-family: fantasy;
-    border-radius: 50%;
-}
+        .testimonial .card .content{
+            position: relative;
+            z-index: 2;
+            font-family: fantasy;
+            border-radius: 50%;
+        }
 
-.testimonial .card .content p{
-    font-size: 18px;
-    line-height: 24px;
-}
+        .testimonial .card .content p{
+            font-size: 18px;
+            line-height: 24px;
+        }
 
-.testimonial .card .content .image{
-    width: 128px;
-    height: 128px;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-    display: inline;
-    border: 4px solid rgb(226, 253, 21);
-    box-shadow: 0 10px 20px rgb(151, 162, 30);
-}
+        .testimonial .card .content .image{
+            width: 128px;
+            height: 128px;
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline;
+            border: 4px solid rgb(226, 253, 21);
+            box-shadow: 0 10px 20px rgb(151, 162, 30);
+        }
 
-.testimonial .card .content .details h2{
-    font-size: 18px;
-    font-family: cursive;
-    font-weight: bold;
-    color: #0d2b39;
-}
+        .testimonial .card .content .details h2{
+            font-size: 18px;
+            font-family: cursive;
+            font-weight: bold;
+            color: #0d2b39;
+        }
 
-.testimonial .card .content .details span{
-    color: #03a9f4;
-    font-size: 20px;
-    transition:2s;
-    color: rgb(243, 255, 183);
-}
+        .testimonial .card .content .details span{
+            color: #03a9f4;
+            font-size: 20px;
+            transition:2s;
+            color: rgb(243, 255, 183);
+        }
 
-.testimonial .card:hover .content .details span{
-    color: rgb(1, 221, 255);
-    font-family:fantasy;
-}
+        .testimonial .card:hover .content .details span{
+            color: rgb(1, 221, 255);
+            font-family:fantasy;
+        }
 
 
-    ul{
-       
-        margin-top: 180px;
-        padding: 0;
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
+        ul{
 
-    ul li{
-        list-style: none;
-        margin: 0 15px;
-    }
+            margin-top: 180px;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
 
-    ul li a{
-        position: relative;
-        display: block;
-        width: 100px;
-        height: 100px;
-        background: #333 ;
-        text-align: center;
-        line-height: 100px;
-        border-radius: 50%;
-        font-size: 30px;
-        color: #666;
-        transition: .1s;
-    }
-    ul li a::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: #ffffff;
-        transition : .5s;
-        transform: scale(.9);
-        z-index: -1;
+        ul li{
+            list-style: none;
+            margin: 0 15px;
+        }
 
-    }
+        ul li a{
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: #333 ;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #666;
+            transition: .1s;
+        }
+        ul li a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #ffffff;
+            transition : .5s;
+            transform: scale(.9);
+            z-index: -1;
 
-    ul li a:hover::before{
-        transform: scale(1.1);
-        box-shadow: 0 0 35px #ffffff;
+        }
 
-    }
+        ul li a:hover::before{
+            transform: scale(1.1);
+            box-shadow: 0 0 35px #ffffff;
 
-    ul li a:hover{
-        color: #f7f7f7;
-        box-shadow: 0 0 5px #ffee10;
-        text-shadow:  0 0 5px #ffee10;
-    }
+        }
+
+        ul li a:hover{
+            color: #f7f7f7;
+            box-shadow: 0 0 5px #ffee10;
+            text-shadow:  0 0 5px #ffee10;
+        }
     </style>
 
 
