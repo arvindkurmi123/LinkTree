@@ -306,7 +306,7 @@
      <span>
      <img class="logo" src="ak.png" alt="Mylogo"></span>
       <span><strong class="text1" style="font-size: 34px;">Arvind Kurmi</strong>
-     <span style="color: white;">23 Gourishankar ward Hatta, Damoh, Madhya Pradesh 470775</span>
+     <span style="color: white;">Guda, Teh - Batiyagarh, Hatta, Damoh, Madhya Pradesh 470775</span>
     </span>
 
        <span><a href="forms.html" target="_blank" class="quick-links" style="float: right;">contact me</a></span>
