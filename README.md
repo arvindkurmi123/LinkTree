@@ -2,49 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arvind Kurmi</title>
+    <title>Arvind kurmi</title>
     <!-- fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <!-- styles -->
-
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 10%;
+            max-width: 100px;
+            height: auto;
             border-radius: 50%;
             border-left-width: 68px;
-            margin-left: 65px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            /* padding-right: 10px; */
+            margin-left: 5%;
+            padding: 10px;
         }
 
         .text1 {
             color: white;
-            position:fixed;
-            padding: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
         }
         .text2 {
             color: rgb(0, 0, 0);
-            font-size: 44px;
-            padding: 30px;
-            padding-left: 170px;
-            /* float: left; */
+            font-size: 2rem;
+            padding: 2rem;
+            padding-left: 5%;
             font-family: 'Aboreto', cursive;
         }
 
@@ -60,11 +55,13 @@
         #first_image {
             float: left;
             width: 49%;
+            max-width: 500px;
         }
 
         #second_image {
             float: right;
             width: 49%;
+            max-width: 500px;
         }
 
         .white_bg {
@@ -72,172 +69,165 @@
         }
 
         .new_container {
-            width: 1465px;
+            max-width: 1465px;
+            margin: 1rem auto;
+            padding: 1rem;
             border: 3px solid rgb(62, 60, 60);
             border-radius: 7px;
             background-color: rgba(255, 252, 156, 0.26);
-            margin: 33px auto;
-            padding: 5px 10px;
-            margin: 18px 5px;
+        }
+        /* Default styles for all screen sizes */
+        .quick-links {
+          color: white;
+          padding: 40px;
+          font-size: 20px;
         }
 
-        .quick-links{
-
-            color: white;
-            padding: 40px;
-            font-size: 20px;
+        #h3headings {
+          font-size: 40px;
+          color: white;
+          font-family: 'Aboreto', cursive;
         }
 
-        #h3headings{
-            font-size: 40px;
-            color: white;
-            font-family: 'Aboreto', cursive;
-        }
-        #h2headings{
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-            float:left;
-            width: 40%;
-            padding-right:  30px;
-            font-style: oblique;
-        }
-        #h1headings{
-            font-size: 20px;
-            padding-top: 10px;
-            padding-right: 30px;
-            padding-bottom: 10px;
-            color: rgb(255, 255, 0);
-            
-            font-style:initial;
-        }
-        .lfloat{
-            /* padding-top: 20px; */
-            padding-left: 60px;
-            float: left;
-            /* width: 50%; */
-        }
-        .rfloat{
-            padding-top: 80px;
-            padding-left: 60px;
-            float: right;
-            width: 40%;
-        }
-        .image-sizing{
-            /* padding: 20px;
-            padding-bottom: 0px; */
-
-            box-sizing: border-box;
-        }
-        .image-sizing .container{
-            display: flex;
-            overflow-x: scroll;
-            padding: 24px;
-            width: 300px;
-            scroll-snap-type: x mandatory;
-            scroll-padding: 24px;
-            border-radius: 8px;
-            gap: 12px;
-        }
-        .image-sizing .container .item{
-            flex: 0 0 100%;
-            padding: 24px;
-            border-radius: 8px;
-            scroll-snap-align: start;
-        }
-        .middle-class{
-            font-size: 35px;
-            /* clear: both; */
-            margin: 20px auto;
-            /* float: right; */
-            width: 40%;
+        #h2headings {
+          font-size: 20px;
+          color: rgb(255, 255, 255);
+          font-style: oblique;
         }
 
-        .welcome{
-            text-align: center;
-            font-size: 33px;
-            color: aliceblue;
+        #h1headings {
+          font-size: 20px;
+          padding-top: 10px;
+          padding-right: 30px;
+          padding-bottom: 10px;
+          color: rgb(255, 255, 0);
+          font-style: initial;
         }
 
-        .testimonial{
-             /* margin: 10px auto 10px; */
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            grid-gap: 20px;
+        .lfloat {
+          padding-left: 60px;
+          float: left;
         }
 
-        .testimonial .card{
-            position:relative;
-            margin:0 auto;
-            width: 350px;
-            border-radius: 20%;
-            /* background: rgb(97, 94, 94); */
-            padding:20px;
-            box-sizing: border-box;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(58,58,58,0.5);
-            overflow: hidden;
+        .rfloat {
+          padding-top: 80px;
+          padding-left: 60px;
+          float: right;
+          width: 40%;
         }
 
-        .testimonial .card .layer{
-            position:absolute;
-            top:calc(100% - 2px);
-            left:0;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(#a7a7a7, #47585e  ,#4e4f4f);
-            z-index: 1;
-            transition: 1.5s;
+        .image-sizing {
+          box-sizing: border-box;
         }
 
-        .testimonial .card:hover .layer{
-            top:0;
+        .image-sizing .container {
+          display: flex;
+          overflow-x: scroll;
+          padding: 24px;
+          width: 300px;
+          scroll-snap-type: x mandatory;
+          scroll-padding: 24px;
+          border-radius: 8px;
+          gap: 12px;
         }
 
-        .testimonial .card .content{
-            position: relative;
-            z-index: 2;
-            font-family: fantasy;
-            border-radius: 50%;
+        .image-sizing .container .item {
+          flex: 0 0 100%;
+          padding: 24px;
+          border-radius: 8px;
+          scroll-snap-align: start;
         }
 
-        .testimonial .card .content p{
-            font-size: 18px;
-            line-height: 24px;
+        .middle-class {
+          font-size: 35px;
+          margin: 20px auto;
+          width: 40%;
         }
 
-        .testimonial .card .content .image{
-            width: 128px;
-            height: 128px;
-            margin: 0 auto;
-            border-radius: 50%;
-            overflow: hidden;
-            display: inline;
-            border: 4px solid rgb(226, 253, 21);
-            box-shadow: 0 10px 20px rgb(151, 162, 30);
+        .welcome {
+          text-align: center;
+          font-size: 33px;
+          color: aliceblue;
         }
 
-        .testimonial .card .content .details h2{
-            font-size: 18px;
-            font-family: cursive;
-            font-weight: bold;
-            color: #0d2b39;
+        .testimonial {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          grid-gap: 20px;
         }
 
-        .testimonial .card .content .details span{
-            color: #03a9f4;
-            font-size: 20px;
-            transition:2s;
-            color: rgb(243, 255, 183);
+        .testimonial .card {
+          position: relative;
+          margin: 0 auto;
+          width: 350px;
+          border-radius: 20%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          box-shadow: 0 20px 40px rgba(58, 58, 58, 0.5);
+          overflow: hidden;
         }
 
-        .testimonial .card:hover .content .details span{
-            color: rgb(1, 221, 255);
-            font-family:fantasy;
+        .testimonial .card .layer {
+          position: absolute;
+          top: calc(100% - 2px);
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(#a7a7a7, #47585e, #4e4f4f);
+          z-index: 1;
+          transition: 1.5s;
         }
 
+        .testimonial .card:hover .layer {
+          top: 0;
+        }
 
-        ul{
+        .testimonial .card .content {
+          position: relative;
+          z-index: 2;
+          font-family: fantasy;
+          border-radius: 50%;
+        }
 
+        .testimonial .card .content p {
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        .testimonial .card .content .image {
+          width: 128px;
+          height: 128px;
+          margin: 0 auto;
+          border-radius: 50%;
+          overflow: hidden;
+          display: inline;
+          border: 4px solid rgb(226, 253, 21);
+          box-shadow: 0 10px 20px rgb(151, 162, 30);
+        }
+
+        .testimonial .card .content .details h2 {
+          font-size: 18px;
+          font-family: cursive;
+          font-weight: bold;
+          color: #0d2b39;
+        }
+
+        .testimonial .card .content .details span {
+          color: #03a9f4;
+          font-size: 20px;
+          transition: 2s;
+          color: rgb(243, 255, 183);
+        }
+
+        .testimonial .card:hover .content .details span {
+          color: rgb(1, 221, 255);
+          font-family: fantasy;
+        }
+
+        /* Styles for desktop */
+        @media screen and (min-width: 768px) {
+          ul {
             margin-top: 180px;
             padding: 0;
             display: flex;
@@ -246,27 +236,28 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
-        }
+          }
 
-        ul li{
+          ul li {
             list-style: none;
             margin: 0 15px;
-        }
+          }
 
-        ul li a{
+          ul li a {
             position: relative;
             display: block;
             width: 100px;
             height: 100px;
-            background: #333 ;
+            background: #333;
             text-align: center;
             line-height: 100px;
             border-radius: 50%;
             font-size: 30px;
             color: #666;
             transition: .1s;
-        }
-        ul li a::before{
+          }
+
+          ul li a::before {
             content: '';
             position: absolute;
             top: 0;
@@ -275,27 +266,24 @@
             height: 100%;
             border-radius: 50%;
             background: #ffffff;
-            transition : .5s;
+            transition: .5s;
             transform: scale(.9);
             z-index: -1;
+          }
 
-        }
-
-        ul li a:hover::before{
+          ul li a:hover::before {
             transform: scale(1.1);
             box-shadow: 0 0 35px #ffffff;
+          }
 
-        }
-
-        ul li a:hover{
+          ul li a:hover {
             color: #f7f7f7;
             box-shadow: 0 0 5px #ffee10;
-            text-shadow:  0 0 5px #ffee10;
-        }
-    </style>
-
-
-</head>
+            text-shadow: 0 0 5px #ffee10;
+          }
+  </style>
+  </head>
+  
 <body >
     <!-- first page start -->
     
@@ -313,16 +301,14 @@
        <span><a href="https://www.sgsits.ac.in/" target="_blank" class="quick-links" style="float: right;">Achievements</a></span>
     
     <!-- <span
-         style="color:white ;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Guda Batiyagarh, Hatta, Damoh, Madhya Pradesh 470775
+         style="color:white ;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guda, Teh - Batiyagarh, Hatta, Damoh, Madhya Pradesh 470775
     </span> -->
 
         <br><br><hr style="color:rgb(254, 252, 252); background-color:rgb(252, 251, 251); height: 1px; border: none;">
 
    <br>
     <!-- MIDDLE HEADING -->
-        <div class="welcome">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp WELCOME TO THE HOME</div>
-        
-        
+    <div class="welcome">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp WELCOME TO THE HOME</div>
     <!-- Left side -->
     <div class="lfloat">
     <!-- <h3 id="h3headings">Welcome to the home!</h3> -->
@@ -425,19 +411,19 @@
         <ul style="margin-top: 300px;">
             <li>
                 <a href="https://web.telegram.org/k/#Arvind_kurmi">
-                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="[telegram.png](https://images.unsplash.com/photo-1657647269831-23835623fe02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60)" alt="GitHub logo">
+                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="telegram.png" alt="GitHub logo">
 
                 </a>
             </li>
             <li>
                 <a href="https://www.facebook.com/arvindkurmi08/">
-                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="[facebook.png](https://images.unsplash.com/photo-1654277041218-84424c78f0ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80)" alt="Twitter logo">
+                    <img  style="height: 100px; width: 100px; border-radius: 50%;" src="facebook.png" alt="Twitter logo">
                     
                 </a>
             </li>
             <li>
                 <a href="https://www.youtube.com/channel/UCKbSq_MokkAlIx6s-FR3pFw">
-                    <img style="height: 100px; width: 100px; border-radius: 50%;" src="![LinkedIn](./youtube.png)" alt="LinkedIn logo">
+                    <img style="height: 100px; width: 100px; border-radius: 50%;" src="youtube.png" alt="LinkedIn logo">
 
                 </a>
             </li>
